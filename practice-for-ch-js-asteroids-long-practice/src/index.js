@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     canvasEl.height = 700;
     
     const ctx = canvasEl.getContext("2d");
-    ctx.fillStyle = "blue";
+    ctx.fillStyle = "black";
     ctx.fillRect(0, 0, 700, 700);
     window.ctx = ctx;
     window.MovingObject = MovingObject;
