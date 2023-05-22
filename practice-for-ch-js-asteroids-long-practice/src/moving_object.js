@@ -5,13 +5,16 @@ class MovingObject {
         this.pos = pos;
         this.vel = vel;
         this.radius = radius;
-        this.color = color;
+        this.color = "#FF0000";
     }
 
     draw(ctx) {
         ctx.beginPath();
-        ctx.arc(pos[0], pos[1], radius, 0, 2 * Math.Pi, true);
+        ctx.strokeStyle = this.color;
+        ctx.arc(this.pos[0], this.pos[1], this.radius, 0, 2 * Math.Pi);
+        ctx.stroke();
     }
 }
+
 
 export default MovingObject;

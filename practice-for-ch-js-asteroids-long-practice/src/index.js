@@ -1,13 +1,18 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const canvasEl = document.getElementById("canvas");
-    // canvasEl.width = 500;
-    // canvasEl.height = 700;
+import MovingObject from "./moving_object";
 
+
+document.addEventListener("DOMContentLoaded", () => {
+    const canvasEl = document.getElementById("game-canvas");
+    canvasEl.width = 700;
+    canvasEl.height = 700;
+    
     const ctx = canvasEl.getContext("2d");
-    ctx.fillStyle = "black";
-    ctx.fillRect(0, 0, 500, 700);
+    ctx.fillStyle = "blue";
+    ctx.fillRect(0, 0, 700, 700);
+    window.ctx = ctx;
+    window.MovingObject = MovingObject;
 });
 
-    console.log("Webpack is working!");
-    import MovingObject from "./moving_object";
-    window.MovingObject = MovingObject;
+
+
+console.log("Webpack is working!");
