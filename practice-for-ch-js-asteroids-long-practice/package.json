@@ -1,0 +1,23 @@
+{
+  "name": "w9d1",
+  "version": "1.0.0",
+  "description": "a crazy asteroid game",
+  "scripts": {
+    "start": "webpack --watch --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akea-tolentino/W9D1.git"
+  },
+  "keywords": [],
+  "author": "akea & matt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akea-tolentino/W9D1/issues"
+  },
+  "homepage": "https://github.com/akea-tolentino/W9D1#readme",
+  "devDependencies": {
+    "webpack": "^5.83.1",
+    "webpack-cli": "^5.1.1"
+  }
+}
