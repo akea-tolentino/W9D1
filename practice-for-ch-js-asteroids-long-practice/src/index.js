@@ -11,11 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const ctx = canvasEl.getContext("2d");
     ctx.fillStyle = "black";
     ctx.fillRect(0, 0, 700, 700);
+    
     window.ctx = ctx;
     window.MovingObject = MovingObject;
-
-    MovingObject();
-    Asteroid();
+    window.Asteroid = Asteroid;
 });
 
 console.log("Webpack is working!");

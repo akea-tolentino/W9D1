@@ -7,7 +7,6 @@ class Asteroid extends MovingObject {
 
     constructor(options) {
         super(options);
-
         this.pos = options.pos;
         this.vel = Util.randomVec(Math.floor(Math.random() * 10) + 1);
         this.radius = Asteroid.RADIUS;
